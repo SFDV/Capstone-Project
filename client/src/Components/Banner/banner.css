@@ -1,0 +1,81 @@
+img {
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+
+.App-bg {
+    height: 660px;
+    width: 3550px;
+    margin-bottom: 80px;
+    overflow-y: hidden;
+    z-index: -100;
+    position: fixed;
+    top: 50px
+}
+
+  
+  .first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 30s linear infinite;
+   }
+    
+   @keyframes bannermove {
+    0% {
+       margin-left: 0px;
+    }
+    100% {
+       margin-left: -3563px;
+    }
+    
+   }
+    
+   @-moz-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -3563px;
+    }
+    
+   }
+    
+   @-webkit-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -3563px;
+    }
+    
+   }
+    
+   @-ms-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -3563px;
+    }
+    
+   }
+    
+   @-o-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -3563px;
+    }
+    
+   }
+   

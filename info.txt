@@ -1,0 +1,14 @@
+This project is actually two applications in one: a server and a client
+
+The server is a REST API (uses GET and POST requests to send/receive information) that uses Express, Node, and MongoDB. It is the process that connects to the Mongo server, and it then can receive GET requests to return items from that server, or POST requests to add new information to store in it.
+
+The Client is a React Single Page Application. It allows an end user to create an account, search for events by state, and create new events in the system.
+
+--
+
+Two new technologies:
+CSV to JSON
+    To load precreated data into the MongoDB server, a CSV file is read into node, parsed, and the resulting JSON objects are inserted into Mongo.
+
+SHA1
+    For user security, passwords are hashed using the SHA1 algorithm before being sent to the server. This means that the plaintext passwords are never received by the server, which is much better from a cybersecurity perspective.
