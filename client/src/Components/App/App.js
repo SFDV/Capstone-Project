@@ -15,7 +15,7 @@ const App = () => (
   <Router>
     <div className="App">
       <div className="App-header">
-        <h2>TOURNEYLOC</h2>
+        <h2>The Smash Center</h2>
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -39,10 +39,9 @@ const App = () => (
           <img alt="" src={require("../Banner/images/img4.jpg")} />
           <img alt="" src={require("../Banner/images/img5.jpg")} />
           <img alt="" src={require("../Banner/images/img6.jpg")} />
-          <img alt="" src={require("../Banner/images/img1.jpg")} />
-          <img alt="" src={require("../Banner/images/img2.jpg")} />
-          <img alt="" src={require("../Banner/images/img3.jpg")} />
-          <img alt="" src={require("../Banner/images/img4.jpg")} />
+          <img alt="" src={require("../Banner/images/img7.jpg")} />
+          <img alt="" src={require("../Banner/images/img8.jpg")} />
+          <img alt="" src={require("../Banner/images/img9.jpg")} />
         </div>
       </div>
     </div>

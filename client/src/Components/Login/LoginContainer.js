@@ -5,75 +5,75 @@ import { withCookies, Cookies } from 'react-cookie'
 
 const mains = {
     //"1": {img: require("../../Data/Icons/1.png"), name: "Mario"},
-    "1": require("../../Data/Icons/1.png"),
-    "2": require("../../Data/Icons/2.png"),
-    "3": require("../../Data/Icons/3.png"),
-    "4": require("../../Data/Icons/4.png"),
-    "4e": require("../../Data/Icons/4e.png"),
-    "5": require("../../Data/Icons/5.png"),
-    "6": require("../../Data/Icons/6.png"),
-    "7": require("../../Data/Icons/7.png"),
-    "8": require("../../Data/Icons/8.png"),
-    "9": require("../../Data/Icons/9.png"),
-    "10": require("../../Data/Icons/10.png"),
-    "11": require("../../Data/Icons/11.png"),
-    "12": require("../../Data/Icons/12.png"),
-    "13": require("../../Data/Icons/13.png"),
-    "13e": require("../../Data/Icons/13e.png"),
-    "14": require("../../Data/Icons/14.png"),
-    "15": require("../../Data/Icons/15.png"),
-    "16": require("../../Data/Icons/16.png"),
-    "17": require("../../Data/Icons/17.png"),
-    "18": require("../../Data/Icons/18.png"),
-    "19": require("../../Data/Icons/19.png"),
-    "20": require("../../Data/Icons/20.png"),
-    "21": require("../../Data/Icons/21.png"),
-    "21e": require("../../Data/Icons/21e.png"),
-    "22": require("../../Data/Icons/22.png"),
-    "23": require("../../Data/Icons/23.png"),
-    "24": require("../../Data/Icons/24.png"),
-    "25": require("../../Data/Icons/25.png"),
-    "25e": require("../../Data/Icons/25e.png"),
-    "26": require("../../Data/Icons/26.png"),
-    "27": require("../../Data/Icons/27.png"),
-    "28": require("../../Data/Icons/28.png"),
-    "28e": require("../../Data/Icons/28e.png"),
-    "29": require("../../Data/Icons/29.png"),
-    "30": require("../../Data/Icons/30.png"),
-    "31": require("../../Data/Icons/31.png"),
-    "32": require("../../Data/Icons/32.png"),
-    "33": require("../../Data/Icons/33.png"),
-    "36": require("../../Data/Icons/36.png"),
-    "37": require("../../Data/Icons/37.png"),
-    "38": require("../../Data/Icons/38.png"),
-    "39": require("../../Data/Icons/39.png"),
-    "40": require("../../Data/Icons/40.png"),
-    "41": require("../../Data/Icons/41.png"),
-    "42": require("../../Data/Icons/42.png"),
-    "43": require("../../Data/Icons/43.png"),
-    "44": require("../../Data/Icons/44.png"),
-    "45": require("../../Data/Icons/45.png"),
-    "46": require("../../Data/Icons/46.png"),
-    "47": require("../../Data/Icons/47.png"),
-    "48": require("../../Data/Icons/48.png"),
-    "49": require("../../Data/Icons/49.png"),
-    "50": require("../../Data/Icons/50.png"),
-    "51": require("../../Data/Icons/51.png"),
-    "54": require("../../Data/Icons/54.png"),
-    "55": require("../../Data/Icons/55.png"),
-    "56": require("../../Data/Icons/56.png"),
-    "57": require("../../Data/Icons/57.png"),
-    "58": require("../../Data/Icons/58.png"),
-    "59": require("../../Data/Icons/59.png"),
-    "60": require("../../Data/Icons/60.png"),
-    "61": require("../../Data/Icons/61.png"),
-    "62": require("../../Data/Icons/62.png"),
-    "63": require("../../Data/Icons/63.png"),
-    "64": require("../../Data/Icons/64.png"),
-    "65": require("../../Data/Icons/65.png"),
-    "66": require("../../Data/Icons/66.png"),
-    "66e": require("../../Data/Icons/66e.png"),
-    "67": require("../../Data/Icons/67.png")
+    "1": {img: require("../../Data/Icons/1.png"), name: "Mario"},
+    "2": {img: require("../../Data/Icons/2.png"), name: "Donkey Kong"},
+    "3": {img: require("../../Data/Icons/3.png"), name: "Link"},
+    "4": {img: require("../../Data/Icons/4.png"), name: "Samus"},
+    "4e": {img: require("../../Data/Icons/4e.png"), name: "Dark Samus"},
+    "5": {img: require("../../Data/Icons/5.png"), name: "Yoshi"},
+    "6": {img: require("../../Data/Icons/6.png"), name: "Kirby"},
+    "7": {img: require("../../Data/Icons/7.png"), name: "Fox"},
+    "8": {img: require("../../Data/Icons/8.png"), name: "Pikachu"},
+    "9": {img: require("../../Data/Icons/9.png"), name: "Luigi"},
+    "10": {img: require("../../Data/Icons/10.png"), name: "Ness"},
+    "11": {img: require("../../Data/Icons/11.png"), name: "Captain Falcon"},
+    "12": {img: require("../../Data/Icons/12.png"), name: "Jigglypuff"},
+    "13": {img: require("../../Data/Icons/13.png"), name: "Peach"},
+    "13e": {img: require("../../Data/Icons/13e.png"), name: "Daisy"},
+    "14": {img: require("../../Data/Icons/14.png"), name:"Bowser"},
+    "15": {img: require("../../Data/Icons/15.png"), name:"Ice Climbers"},
+    "16": {img: require("../../Data/Icons/16.png"), name: "Sheik"},
+    "17": {img: require("../../Data/Icons/17.png"), name: "Zelda"},
+    "18": {img: require("../../Data/Icons/18.png"), name: "Dr. Mario"},
+    "19": {img: require("../../Data/Icons/19.png"), name: "Pichu"},
+    "20": {img: require("../../Data/Icons/20.png"), name: "Falco"},
+    "21": {img: require("../../Data/Icons/21.png"), name: "Marth"},
+    "21e": {img: require("../../Data/Icons/21e.png"), name: "Lucina"},
+    "22": {img: require("../../Data/Icons/22.png"), name: "Young Link"},
+    "23": {img: require("../../Data/Icons/23.png"), name: "Ganondorf"},
+    "24": {img: require("../../Data/Icons/24.png"), name: "Mewtwo"},
+    "25": {img: require("../../Data/Icons/25.png"), name: "Roy"},
+    "25e": {img: require("../../Data/Icons/25e.png"), name: "Chrom"},
+    "26": {img: require("../../Data/Icons/26.png"), name: "Mr. Game & Watch"},
+    "27": {img: require("../../Data/Icons/27.png"), name: "Meta Knight"},
+    "28": {img: require("../../Data/Icons/28.png"), name: "Pit"},
+    "28e": {img: require("../../Data/Icons/28e.png"), name: "Dark Pit"},
+    "29": {img: require("../../Data/Icons/29.png"), name: "Zero Suit Samus"},
+    "30": {img: require("../../Data/Icons/30.png"), name: "Wario"},
+    "31": {img: require("../../Data/Icons/31.png"), name: "Snake"},
+    "32": {img: require("../../Data/Icons/32.png"), name: "Ike"},
+    "33": {img: require("../../Data/Icons/33.png"), name: "Pokémon Trainer"},
+    "36": {img: require("../../Data/Icons/36.png"), name: "Diddy Kong"},
+    "37": {img: require("../../Data/Icons/37.png"), name: "Lucas"},
+    "38": {img: require("../../Data/Icons/38.png"), name: "Sonic"},
+    "39": {img: require("../../Data/Icons/39.png"), name: "King Dedede"},
+    "40": {img: require("../../Data/Icons/40.png"), name: "Olimar"},
+    "41": {img: require("../../Data/Icons/41.png"), name: "Lucario"},
+    "42": {img: require("../../Data/Icons/42.png"), name: "R.O.B"},
+    "43": {img: require("../../Data/Icons/43.png"), name: "Toon Link"},
+    "44": {img: require("../../Data/Icons/44.png"), name: "Wolf"},
+    "45": {img: require("../../Data/Icons/45.png"), name: "Villager"},
+    "46": {img: require("../../Data/Icons/46.png"), name: "Mega Man"},
+    "47": {img: require("../../Data/Icons/47.png"), name: "Wii Fit Trainer"},
+    "48": {img: require("../../Data/Icons/48.png"), name: "Rosalina & Luma"},
+    "49": {img: require("../../Data/Icons/49.png"), name: "Little Mac"},
+    "50": {img: require("../../Data/Icons/50.png"), name: "Greninja"},
+    "51": {img: require("../../Data/Icons/51.png"), name: "Mii Fighter"},
+    "54": {img: require("../../Data/Icons/54.png"), name: "Palutena"},
+    "55": {img: require("../../Data/Icons/55.png"), name: "Pac-Man"},
+    "56": {img: require("../../Data/Icons/56.png"), name: "Robin"},
+    "57": {img: require("../../Data/Icons/57.png"), name: "Shulk"},
+    "58": {img: require("../../Data/Icons/58.png"), name: "Bowser Jr."},
+    "59": {img: require("../../Data/Icons/59.png"), name: "Duck Hunt"},
+    "60": {img: require("../../Data/Icons/60.png"), name: "Ryu"},
+    "61": {img: require("../../Data/Icons/61.png"), name: "Cloud"},
+    "62": {img: require("../../Data/Icons/62.png"), name: "Corrin"},
+    "63": {img: require("../../Data/Icons/63.png"), name: "Bayonetta"},
+    "64": {img: require("../../Data/Icons/64.png"), name: "Inkling"},
+    "65": {img: require("../../Data/Icons/65.png"), name: "Ridley"},
+    "66": {img: require("../../Data/Icons/66.png"), name: "Simon"},
+    "66e": {img: require("../../Data/Icons/66e.png"), name: "Richter"},
+    "67": {img: require("../../Data/Icons/67.png"), name: "King K. Rool"}
 }
 
 class LoginContainer extends Component {
@@ -362,13 +362,13 @@ class LoginContainer extends Component {
                 <div>
                     <p>{this.state.message}</p>
                     <h3>Current User Login</h3>
-                    <label>Username: </label><input value={this.state.loginUser} onChange={this.handleLoginUser} type="text"></input><br />
-                    <label>Password: </label><input type="password" value={this.state.loginPass} onChange={this.handleLoginPass}></input><br />
+                    <label>Username: </label><input value={this.state.loginUser} onChange={this.handleLoginUser} type="text"></input><br /><br />
+                    <label>Password: </label><input type="password" value={this.state.loginPass} onChange={this.handleLoginPass}></input><br /><br />
                     <button onClick={this.buttonPressed}>Login</button> <br /><br />
 
                     <h3>New User Registration</h3>
-                    <label>Username: </label><input value={this.state.regUser} onChange={this.handleRegUser} type="text"></input><br />
-                    <label>Password: </label><input type="password" value={this.state.regPass} onChange={this.handleRegPass}></input><br />
+                    <label>Username: </label><input value={this.state.regUser} onChange={this.handleRegUser} type="text"></input><br /><br />
+                    <label>Password: </label><input type="password" value={this.state.regPass} onChange={this.handleRegPass}></input><br /><br />
                     <button onClick={this.regPressed}>Click me!</button> <br /><br />
                 </div>
             );
@@ -380,17 +380,17 @@ class LoginContainer extends Component {
                     <p>Welcome, {cookies.get('name').charAt(0).toUpperCase() + cookies.get('name').slice(1)} <br />
                     {
                         cookies.get('main') && cookies.get('main') != "-1" ?
-                            (<img src={mains[cookies.get('main')]} />) : null
+                            (<img src={mains[cookies.get('main')].img} />) : null
                     }
                     </p>
 
                     <label>Set your main: </label><select value={this.state.selectedMain} onChange={this.handleMain}>
                     {
                         Object.keys(mains).map((m, index) => (
-                            <option key={index} value={m}>{m}</option>
+                            <option key={index} value={m}>{mains[m].name}</option>
                         ))
                     }
-                    </select><br />
+                    </select><br /><br />
                     <button onClick={this.setMain}>Set Main</button>
                     <br /><br />
 
@@ -399,7 +399,7 @@ class LoginContainer extends Component {
 
                     <h3>Create a New Event</h3>
                     <p>Hosting a Smash event? Tell us its name and the state it's happening in!</p>
-                    <label>Event Name: </label><input type="text" value={this.state.eventName} onChange={this.handleEventName}></input><br />
+                    <label>Event Name: </label><input type="text" value={this.state.eventName} onChange={this.handleEventName}></input><br /><br />
                     <label>Event State: </label>
                     <select value={this.state.eventState} onChange={this.handleEventState}>
                         {this.US.map((USState, index) => (
@@ -408,7 +408,7 @@ class LoginContainer extends Component {
                             </option>
                         ))}
                     </select>
-                    <br />
+                    <br /><br />
                     <button onClick={this.createEvent}>Create Event</button>
                 </div>
         )

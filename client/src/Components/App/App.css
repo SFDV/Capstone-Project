@@ -12,6 +12,9 @@
     height: 75px;
     padding: 5px;
     color: white;
+    position: fixed;
+    width: 100%;
+    top:0px;
 }
 
 .App-header h2 {
@@ -32,21 +35,14 @@
     border-radius: 0.5em;
     box-shadow: #222 2px 2px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .App-intro {
     font-size: large;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 
 nav ul {
     display: flex;
@@ -66,3 +62,5 @@ nav ul li a {
     height: 100%;
     width: 100%;
 }
+
+/* Banner */
