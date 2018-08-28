@@ -4,7 +4,9 @@
   "description": "Because having the server and client in a single program had massive problems.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "seed": "cd seed/ && node seed.js && cd ../"
   },
   "author": "Dan Vickey",
   "license": "ISC",

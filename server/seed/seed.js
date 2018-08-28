@@ -10,6 +10,7 @@ let database = null;
 MongoClient.connect(config.db, async function (err, db) {
     if (err) {
         console.log(err);
+        process.exit(1);
     } else {
         let seedData = await csv().fromFile("./data.csv");
 
@@ -32,4 +33,6 @@ MongoClient.connect(config.db, async function (err, db) {
         console.log(await events.find({}).toArray());
         console.log("We're connected!");
     }
+
+    process.exit(0);
 });
