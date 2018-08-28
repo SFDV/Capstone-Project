@@ -3,13 +3,18 @@ const bodyParser = require('body-parser');
 
 const MongoClient = require('mongodb').MongoClient;
 const config = {
-    db: "mongodb://localhost:27017/smash"
+   // db: "mongodb://dv-capstone-server.herokuapp.com:27017/smash"
+   db: process.env.MONGODB_URI
 };
+console.log(config);
 let eventsCollection = null;
 let usersCollection = null;
 
 const app = express();
 app.use(bodyParser.json());
+
+const csv = require('csvtojson');
+const sha1 = require('sha1');
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -58,7 +63,7 @@ app.post("/setmain", async function (req, res) {
     res.json(succ ? body.main : false);
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server's up.");
 })
 
@@ -66,11 +71,29 @@ app.listen(3001, () => {
 
 //------------------ Mongo
 
-MongoClient.connect(config.db, function (err, mongo) {
+MongoClient.connect(config.db, {useNewUrlParser: true}, async function (err, mongo) {
     if (err) {
         console.log(err);
     } else {
-        let database = mongo.db("smash");
+        let database = mongo.db("heroku_l8s1cfgq");
+        let seedData = await csv().fromFile("./seed/data.csv");
+
+        //await database.dropCollection("events");
+        //await database.dropCollection("users");
+
+        await database.createCollection("events");
+        await database.createCollection("users");
+
+        let events = database.collection("events");
+        let users = database.collection("users");
+        //await users.insertOne({username: "admin", password: sha1("12345")});
+        await events.deleteMany({});
+        for (let i = 0; i < seedData.length; i++) {
+            await events.insertOne(seedData[i]);
+        }
+        console.log(await users.find({}).toArray());
+        console.log(await events.find({}).toArray());
+        console.log("We're connected!");
         eventsCollection = database.collection("events");
         usersCollection = database.collection("users");
         console.log("We're connected!");
