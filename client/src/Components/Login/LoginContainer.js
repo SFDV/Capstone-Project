@@ -181,7 +181,7 @@ class LoginContainer extends Component {
     async buttonPressed() { //login
         const { cookies } = this.props;
 
-        let result = await fetch('http://localhost:3001/login', {
+        let result = await fetch('https://dv-capstone-server.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -213,7 +213,7 @@ class LoginContainer extends Component {
     async regPressed() {
         const { cookies } = this.props;
 
-        let result = await fetch('http://localhost:3001/register', {
+        let result = await fetch('https://dv-capstone-server.herokuapp.com/register', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -254,7 +254,7 @@ class LoginContainer extends Component {
     async createEvent() {
         const { cookies } = this.props;
 
-        let result = await fetch('http://localhost:3001/newevent', {
+        let result = await fetch('https://dv-capstone-server.herokuapp.com/newevent', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -285,7 +285,7 @@ class LoginContainer extends Component {
     async setMain() {
         const { cookies } = this.props;
 
-        let result = await fetch('http://localhost:3001/setmain', {
+        let result = await fetch('https://dv-capstone-server.herokuapp.com/setmain', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

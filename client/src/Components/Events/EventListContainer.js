@@ -11,7 +11,7 @@ class EventListContainer extends Component {
     }
 
     async componentDidMount() {     
-        let result = await fetch("http://localhost:3001/");
+        let result = await fetch("https://dv-capstone-server.herokuapp.com/");
         result = await result.json();
         this.setState({ eventList: result });
     }
